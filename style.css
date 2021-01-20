@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", Sans-Serif;
+  background: linear-gradient(
+    to right bottom,
+    rgba(212, 209, 209, 0.7),
+    rgba(235, 219, 219, 0.3)
+  );
+}
+
+.box {
+  height: 30rem;
+  width: 40rem;
+  margin: 10rem;
+  background-color: rgba(72, 180, 166, 0.521);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0.5rem;
+  resize: vertical;
+  overflow: auto;
+}
+
+.todo {
+  display: inline-flex;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.fa-clipboard-list {
+  color: rgb(241, 220, 25);
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+form {
+  height: 70%;
+  width: 60%;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0;
+}
+
+input {
+  height: 2rem;
+  width: 20rem;
+  margin: 2rem;
+  outline: none;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0px none;
+  background: linear-gradient(
+    to right bottom,
+    rgba(250, 245, 245, 0.9),
+    rgba(235, 219, 219, 0.8)
+  );
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.check {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.check:hover {
+  opacity: 1;
+}
+
+li,
+.check {
+  margin: 0;
+  padding: 0;
+}
+
+.delete {
+  display: flex;
+  height: 3rem;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.delete:hover {
+  height: 3.5rem;
+  width: 5.5rem;
+}
